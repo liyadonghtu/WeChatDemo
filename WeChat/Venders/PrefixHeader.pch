@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  WeChat
+//
+//  Created by 李亚东 on 16/11/27.
+//  Copyright © 2016年 李亚东. All rights reserved.
+//
+
+#import "UIColor+Extend.h"
+#import "PrefixHeaderForMessageSection.pch"
+#import "LLCreateControls.h"
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#define MainBackgroundColor ([UIColor colorWithRed:237/255.0 green:236/255.0 blue:242/255.0 alpha:1])
+
+
+
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

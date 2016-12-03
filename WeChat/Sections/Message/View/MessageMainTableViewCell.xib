@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" rowHeight="43" id="KGk-i7-Jjw" customClass="MessageMainTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="583" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="583" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconHeader" translatesAutoresizingMaskIntoConstraints="NO" id="aXf-Mj-buV">
+                        <rect key="frame" x="5" y="5" width="50" height="50"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="K24-8V-fVB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elL-v6-LbN">
+                        <rect key="frame" x="60" y="10" width="100" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="nfr-i5-Axu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="人的一生...." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYx-4P-qgi">
+                        <rect key="frame" x="60" y="31" width="200" height="19"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="WGp-uA-cXK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.40510471204188481" green="0.40510471204188481" blue="0.40510471204188481" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="elL-v6-LbN" firstAttribute="leading" secondItem="aXf-Mj-buV" secondAttribute="trailing" constant="5" id="21W-vy-EAu"/>
+                    <constraint firstItem="aXf-Mj-buV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="2Y2-Tu-hWQ"/>
+                    <constraint firstAttribute="bottom" secondItem="MYx-4P-qgi" secondAttribute="bottom" constant="10" id="3HA-Xr-ZO2"/>
+                    <constraint firstItem="elL-v6-LbN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="5EW-F0-ZqI"/>
+                    <constraint firstItem="MYx-4P-qgi" firstAttribute="leading" secondItem="aXf-Mj-buV" secondAttribute="trailing" constant="5" id="6kL-hu-OZh"/>
+                    <constraint firstAttribute="bottom" secondItem="aXf-Mj-buV" secondAttribute="bottom" constant="5" id="YxM-Hz-ixz"/>
+                    <constraint firstItem="aXf-Mj-buV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="bps-aq-Ree"/>
+                    <constraint firstItem="MYx-4P-qgi" firstAttribute="top" secondItem="elL-v6-LbN" secondAttribute="bottom" id="cIT-66-OoY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="iconView" destination="aXf-Mj-buV" id="vkp-47-nn3"/>
+                <outlet property="messageText" destination="MYx-4P-qgi" id="z2a-76-sXa"/>
+                <outlet property="nameText" destination="elL-v6-LbN" id="3Dz-Mt-mXJ"/>
+            </connections>
+            <point key="canvasLocation" x="340.5" y="383.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconHeader" width="183" height="183"/>
+    </resources>
+</document>

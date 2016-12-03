@@ -1,0 +1,22 @@
+//
+//  PrefixHeaderForMessageSection.pch
+//  WeChat
+//
+//  Created by 李亚东 on 16/11/27.
+//  Copyright © 2016年 李亚东. All rights reserved.
+//
+
+#ifndef PrefixHeaderForMessageSection_pch
+#define PrefixHeaderForMessageSection_pch
+
+#define Icon_MarginX_Define  5
+#define Icon_MarginY_Define  5
+#define Icon_Height_Define  40
+#define Icon_Weight_Define  40
+
+#define MessageCell_Height_Define  50
+
+
+
+
+#endif /* PrefixHeaderForMessageSection_pch */
